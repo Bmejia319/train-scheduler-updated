@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <title>MTA Subway Scheduler</title>
+</head>
+<body>
+    <div class = "main-container">
+<!-- Page Header -->
+      <div class ="row"> 
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Subway</h1>
+                  <p class="lead">New York City MTA Subway Scheduler </p>
+                </div>        
+          </div>
+        </div>
+ <!-- Full Icon Display --> 
+        <div class ="row">
+            <div class = "icons">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _1">1</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _2">2</span>
+                         </a>    
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _3">3</span>
+                          </a>  
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _B">B</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _D">D</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _F">F</span>
+                          </a>
+                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _M">M</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_iconY _N">N</span>
+                         </a>    
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_iconY _R">R</span>
+                          </a>  
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_iconY _Q">Q</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_iconY _W">W</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _G">G</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _4">4</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _5">5</span>
+                         </a>    
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _6">6</span>
+                          </a>  
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _A">A</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                             <span class="sub_icon _C">C</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _E">E</span>
+                          </a>     
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _7">7</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _L">L</span>
+                         </a>    
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _S">S</span>
+                          </a>  
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _J">J</span>
+                          </a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="sub_icon _Z">Z</span>
+                          </a>
+            </div>
+            </div>
+<!--          
+            <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <span id="alert-view"></span>
+                    </div> -->
+                </div>
+       
+<!-- main body w/ table and form -->    
+    <div class = "body-container">
+        <div class = "row">
+<!-- Train Submit Form  -->   
+<div class = "col-md-4">   
+        <form>
+            <div class="form-group">
+               <h2>Add Train</h2>
+               <hr>
+                <label for="exampleInputName">Train Name</label>
+                <input type="name" class="form-control" id="name-input" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputDesgination">Destination</label>
+                <input type="destination" class="form-control" id="destination-input" placeholder="Destination">
+              </div>
+              <div class="form-group">
+                      <label for="exampleInputFirstTime">First Train Time</label>
+                      <input type="time" class="form-control" id="firstTime-input" placeholder="(HH:MM):Military Time">
+              </div>
+              <div class="form-group">
+                      <label for="exampleInputFrequency">Frequency</label>
+                      <input type="frequency" class="form-control" id="frequency-input" placeholder="(minutes)">
+               </div>
+          
+              <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+            </form>
+        
+      </div>
+      
+ <!-- Train Scheudle Table Display -->             
+            <div class ="col-md-8">
+                <div class="firstTable"> 
+                  <table class="table table-hover table-dark">
+                  <h2>Current Train Schedule</h2>
+                    <thead> 
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival </th>
+                        <th scope="col">Minutes Away</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id = "full-train-list">
+                      <tr class = "select-row">
+                        <td scope="row" class= "train-name" id="name-display"></th>
+                        <td class = "train-destination" id="destination-display"></td>
+                        <td class = "train-frequency" id="frequency-display"></td>
+                        <td class ="train-next" id="nextArrival-display"></td>
+                        <td class = "train-minutes" id="minutesAway-display"></td>      
+                      </tr>
+                    </tbody>
+                    </table>
+                  </div>
+             </div>
+         </div>
+     </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="./logic.js"></script>
+
+</body>
+</html>

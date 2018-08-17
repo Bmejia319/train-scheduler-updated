@@ -1,0 +1,315 @@
+body{
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+.main-container{
+  width: 100%;
+  margin-top: 10px;
+
+
+}
+
+.jumbotron{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+}
+
+.display-4 {
+    font-size: 4rem;
+    font-weight: 550;
+    line-height: 1.2;
+    margin-left: -164px; 
+}
+
+.lead {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-left:  -164px;
+}
+.body-container{
+    margin-top: 20px;
+}
+
+h2{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+hr{
+    background-color: #32383e;
+    weight: 1px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #15181b;
+    border-color: #000000;
+}
+
+
+
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+}
+
+form{
+    margin: auto;
+   
+    padding-right: 40px;
+    width: 55%;
+    margin-top: 23px;
+    margin-left: 133px;
+}
+
+.form-group{
+    color: white;
+}
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #32383e;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid #32383e;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.firstTable{
+    margin-left: -92px;
+    width: 100%;
+    margin-top: 20px;
+    border-left: 1px solid #32383e;
+    padding-left: 40px;
+
+}
+table{
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #000000;
+}
+
+
+
+#image-dropdown {
+  /*style the "box" in its minimzed state*/
+  border:1px solid black; width:200px; height:50px; overflow:hidden;
+  /*animate collapsing the dropdown from open to closed state (v. fast)*/
+  -moz-transition: height 0.1s; 
+  -webkit-transition: height 0.1s; 
+  -ms-transition: height 0.1s;  
+  -o-transition: height 0.1s;  
+  transition: height 0.1s;
+}
+#image-dropdown:hover {
+  /*when expanded, the dropdown will get native means of scrolling*/
+  height:200px; overflow-y:scroll;
+  /*nice and smooth expand - speed this up at your preference or remove animation altogether*/
+  -moz-transition: height 0.5s; 
+  -webkit-transition: height 0.5s; 
+  -ms-transition: height 0.5s;  
+  -o-transition: height 0.5s;  
+  transition: height 0.5s;
+}
+#image-dropdown input {
+  /*hide the nasty default radio buttons. like, completely!*/
+  position:absolute;top:0;left:0;opacity:0;
+}
+
+
+#image-dropdown label {
+  /*style the labels to look like dropdown options, kinda*/
+  display:none; margin:2px; height:46px; opacity:0.2; 
+  /*setting correct backgrounds - add additional rules with selectors based on "for" attribute, something like label[for=line2]{background-image:...}*/
+  background-color: transparent;
+  /* background:url("http://www.google.com/images/srpr/logo3w.png") 50% 50%;} */
+}
+#image-dropdown:hover label{
+  /*this is how labels render in the "expanded" state. we want to see only the selected radio button in the collapsed menu, and all of them when expanded*/
+  display:block;
+}
+#image-dropdown label:hover {
+  opacity:0.5;
+}
+#image-dropdown input:checked + label {
+  /*tricky! labels immediately following a checked radio button (with our markup they are semantically related) should be fully opaque regardless of hover, and they should always be visible (i.e. even in the collapsed menu*/
+  opacity:1 !important; display:block;
+}
+
+/*pfft, nothing as cool here, just the value trace*/
+#trace {margin:0 0 20px;}
+
+
+/* subway icon styling */
+a.btn.btn-primary {
+    height: 47px;
+    /* width: 56px; */
+    text-align: center;
+}
+
+span.sub_icon, label.sub_icon {
+    width: 1.5em;
+    height: 1.5em;
+    -webkit border radius: 5em;
+    -moz-border-radius: 5em;
+    border-radius: 5em;
+    float: left;
+    margin: 5px;
+    font-family: Helvetica;
+    font-weight: 500;
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  span.sub_iconY, label.sub_icon {
+    width: 1.5em;
+    height: 1.5em;
+    -webkit border radius: 5em;
+    -moz-border-radius: 5em;
+    border-radius: 5em;
+    float: left;
+    margin: 5px;
+    font-family: Helvetica;
+    font-weight: 500;
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+  }
+  
+  span.sub_icon._J {
+    background:#8f5a00;
+  }
+  
+  span.sub_icon._Z {
+    background:#8f5a00;
+  }
+  
+  span.sub_icon._B {
+    background:#fe8f00;
+  }
+  
+  span.sub_icon._D {
+    background:#fe8f00;
+  }
+  span.sub_icon._M {
+    background:#fe8f00;
+  }
+  span.sub_icon._F {
+    background:#fe8f00;
+  }
+  
+  span.sub_iconY._N {
+    background:#ffea00;
+  }
+  
+  span.sub_iconY._R {
+    background:#ffea00;
+  }
+  
+  span.sub_iconY._Q {
+    background:#ffea00;
+  }
+
+  span.sub_iconY._W {
+    background:#ffea00;
+  }
+  
+  span.sub_icon._A {
+    background:#2a36b1;
+  }
+  
+  span.sub_icon._C {
+    background:#2a36b1;
+  }
+  
+  span.sub_icon._E {
+    background:#2a36b1;
+  }
+  
+  span.sub_icon._4 {
+    background:#0a8f08;
+  }
+  
+  span.sub_icon._5 {
+    background:#0a8f08;
+  }
+  
+  span.sub_icon._6 {
+    background:#0a8f08;
+  }
+  
+  span.sub_icon._1 {
+    background:#e51c23;
+  }
+  
+  span.sub_icon._2 {
+    background:#e51c23;
+  }
+  
+  span.sub_icon._3 {
+    background:#e51c23;
+  }
+  
+  span.sub_icon._L {
+    background:#757575;
+  }
+  
+  span.sub_icon._S {
+    background:#757575;
+  }
+  
+  span.sub_icon._7 {
+    background:#d500f9;
+  }
+  
+  span.sub_icon._G {
+    background:#42bd41;
+  }
+  
+  .icons{
+    clear: both;
+    margin-left: 129px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    justify-content: center;
+}
+
